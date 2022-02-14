@@ -1,0 +1,28 @@
+
+package com.prk;
+
+import java.util.Scanner;
+
+public class Test3 {
+    public static void main(String[] args) {
+        int num;
+       
+        int arr[]={1,2,3,4,5,6,7,8};
+        System.out.println(arr.length);
+        int temp=1;
+        for(int i=1; i<=arr.length; i++){
+        temp=temp+i;
+        }
+        System.out.println(temp);
+        System.out.println("Enter a Number :");
+         Scanner sc = new Scanner(System.in);
+        num= sc.nextInt();
+        for(int i=2; i<=num-1; i++){
+        if(num%i==0){
+            System.out.println("PN");
+        }else{
+            System.out.println("NP");
+        }
+        }
+    }
+}
